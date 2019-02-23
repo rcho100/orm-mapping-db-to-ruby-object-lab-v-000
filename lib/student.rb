@@ -86,9 +86,9 @@ class Student
       grade TEXT
     )
     SQL
+    binding.pry
     DB[:conn].execute(sql)
   end
-  binding.pry
 
   def self.drop_table
     sql = "DROP TABLE IF EXISTS students"
